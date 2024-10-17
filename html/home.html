@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Print Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  
+  height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  height: fit-content;
+}
+
+.product-section {
+  width: 100vw;  
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+}
+
+.options {
+  margin: 10px 0;
+}
+
+button.customize-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.customize-btn:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">Custom Print</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Product Showcase -->
+  <main>
+    <h1>Choose Your Custom Product</h1>
+    <section class="product-section">
+      <!-- <h1>Choose Your Custom Product</h1> -->
+
+      <!-- T-Shirts Section -->
+      <div class="product-item">
+        <h2>T-Shirts</h2>
+        <img src="../assets/textile_designs/tshirts_editor's pick/kakashi_tshirts.jpeg" alt="T-shirt" class="product-image">
+        <div class="options">
+          <label for="size">Size:</label>
+          <select id="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+          <label for="color">Color:</label>
+          <select id="color">
+            <option value="white">White</option>
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+          </select>
+        </div>
+        <button class="customize-btn">Customize</button>
+      </div>
+
+      <!-- Mobile Pouches Section -->
+      <div class="product-item">
+        <h2>Hoodies</h2>
+        <img src="../assets/textile_designs/hoodie_editor's_pick/anime_hoodie1.png" alt="hoodie" class="product-image">
+        <div class="options">
+            <label for="size">Size:</label>
+            <select id="size">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+            <label for="color">Color:</label>
+            <select id="color">
+              <option value="white">White</option>
+              <option value="black">Black</option>
+              <option value="red">Red</option>
+            </select>
+          </div>
+        <button class="customize-btn">Customize</button>
+      </div>
+
+      <!-- shirts section -->
+      <div class="product-item">
+        <h2>Shirts</h2>
+        <img src="../assets/shirt-removebg-preview.png" alt="T-shirt" class="product-image" width="260px" height="258px">
+        <div class="options">
+          <label for="size">Size:</label>
+          <select id="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+          <label for="color">Color:</label>
+          <select id="color">
+            <option value="white">White</option>
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+          </select>
+        </div>
+        <button class="customize-btn">Customize</button>
+      </div>
+
+      <!-- Bottles Section -->
+      <!-- <div class="product-item">
+        <h2>Bottles</h2>
+        <img src="../assets/bottle-removebg-preview.png" alt="Bottle" class="product-image">
+        <div class="options">
+            <label for="size">Type:</label>
+            <select id="size">
+              <option value="small">plastic</option>
+              <option value="medium">steel</option>
+              <option value="large">copper</option>
+            </select>
+            <label for="color">Color:</label>
+            <select id="color">
+              <option value="white">White</option>
+              <option value="black">Black</option>
+              <option value="red">Red</option>
+            </select>
+          </div>
+        <button class="customize-btn">Customize</button>
+      </div> -->
+
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Custom Print Store. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

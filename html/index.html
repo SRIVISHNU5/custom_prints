@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <style>
+      *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: cursive;
+      }
+      .parent{
+        background: radial-gradient( rgb(202, 28, 15),yellow); 
+        /* background-image: url(../assets/DALL·E-safeimagekit.webp); */
+        background: transparent 1.5;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 50px 0px;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .form{
+        border: 1px solid #362928;
+        border-radius: 10px;
+        background-image: url(../ASSETS/pikachu.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: aliceblue;
+        padding: 10px;
+        width: 50vw;
+        height: 80vh;
+        margin: 20px;
+        box-shadow: 0 30px 30px rgba(21, 22, 22, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .form a{
+        color: rgb(241, 241, 238);
+        text-decoration: none;
+        margin-top: 10px;
+      }
+      .form a:hover{
+        cursor: pointer;
+        transform: scale(2);
+        color: rgb(235, 13, 216);
+      }
+      .form #uname,#psw {
+        width: 100%;
+        padding: 5px;
+        margin: 5px;
+      }
+      .form #sub,#res{
+        padding: 5px 20px;
+        margin: 5px;
+        background-color: transparent;
+        border: 1px solid rgb(243, 242, 237);
+        border-radius: 4px;
+        color: rgb(243, 242, 237);
+        transition: background-color 0.5s;
+      }
+      .form #res:hover{
+        cursor: pointer;
+        background-color: rgb(243, 242, 237);
+        color: rgb(255, 0, 200);
+        transform: scale(1.2);
+      }
+      .form #sub:hover{
+        cursor: pointer;
+        background-color: rgb(243, 243, 237);
+        color: rgb(234, 13, 194);
+        transform: scale(1.2);
+      }
+      .parent a{
+        color: rgb(243, 242, 237);
+        text-decoration: none;
+        margin-top: 10px;
+        transition: transform 2s;
+      }
+      .parent a:hover{
+        cursor: pointer;
+        transform: scale(1.5);
+        transform: translate(200px,40px);
+        color: rgb(9, 121, 226);
+      }
+      .parent span {
+        color: rgb(146, 113, 6);
+        padding: 10px 0px;
+        animation: colorChange 5s infinite;
+        font-size: 24px;
+      }
+      
+
+      .parent span:nth-child(1)
+       {
+        animation-delay: 0.5s;
+      }
+      .parent span:nth-child(2)
+       {
+        animation-delay: 1s;
+      }
+      .parent span:nth-child(3)
+       {
+        animation-delay: 1.5s;
+      }
+      .parent span:nth-child(4)
+       {
+        animation-delay: 2s;
+      }
+      .parent span:nth-child(5)
+       {
+        animation-delay: 2.5s;
+      }
+      .parent span:nth-child(6)
+       {
+        animation-delay: 3s;
+      }
+      .parent span:nth-child(7)
+       {
+        animation-delay: 3s;
+      }
+      .parent span:nth-child(8)
+       {
+        animation-delay: 3.5s;
+      }
+      .parent span:nth-child(9)
+       {
+        animation-delay: 4s;
+      }
+      .parent span:nth-child(10)
+       {
+        animation-delay: 4.5s;
+      }
+      .parent span:nth-child(511)
+       {
+        animation-delay: 5s;
+      }
+      .parent h3 span{
+        font-size: 20px;
+      }
+      .parent h3{
+        margin: 20px 0px 10px 0px;
+      }
+      
+
+      @keyframes colorChange {
+        0% {
+          color: rgb(121, 92, 6);
+        }
+        25% {
+          color: rgb(5, 154, 92);
+        }
+        50% {
+          color: rgb(6, 143, 174);
+        }
+        75% {
+          color: rgb(139, 5, 99);
+        }
+        100% {
+          color: rgb(146, 113, 6);
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <h2><span>P</span><span>R</span><span>I</span><span>N</span><span>T</span>
+        <span> </span><span>M</span><span>A</span><span>N</span><span>I</span><span>A</span></h2>
+      <h3><span>L</span><span>o</span><span>g</span><span>I</span><span>n</span></h3>
+      <div class="form">
+        <form action="home.html" target="_blank" autocomplete="on">
+          <label for="uname">Username or email :</label><br />
+          <input
+            type="text"
+            id="uname"
+            name="uname"
+            placeholder="username or email"
+          /><br /><br />
+          <label for="psw">Password:</label><br />
+          <input
+            type="password"
+            id="psw"
+            name="psw"
+            placeholder=" enter password"
+          /><br /><br />
+          <input type="submit" id="sub" value="Login" />
+          <input type="reset" id="res" value="Reset" /><br /><br />
+          <a href="www.google.com">forgot password?</a><br /><br />
+          <a href="signup.html">New User? Sign up here</a><br />
+        </form>
+      </div>
+      <a href="home.html">skip</a>
+    </div>
+  </body>
+</html>
